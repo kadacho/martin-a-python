@@ -1,17 +1,22 @@
-# tnota=0
+alumnos=int(input("Introduzca el número de alumnos: "))
+for j in range(alumnos):
+    tnota=0
+    notas=int(input(f"Introduzca el número de notas del alumno {j+1}: "))
+    for i in range(notas):
+        nota=float(input(f"Nota {i+1}: "))
+        tnota=tnota+nota
 
-# num=int(input("Introduzca el número de notas: "))
-# for i in range(num):
-#     nota=float(input(f"Nota {i+1}: "))
-#     tnota=tnota+nota
+    resultado=tnota/notas
 
-# resultado=tnota/num
-# print("Su promedio es", round(resultado, 1))
+    if resultado>=4:
+        print("El promedio es",round(resultado, 1)","," alumno aprobado")
+    else:
+        print("El promedio es",round(resultado, 1)","," alumno reprobado")
 
-# if resultado>=4:
-#     print("Usted aprobó")
-# else:
-#     print("Usted reprobó")
+
+
+
+
 
 # num=int(input("Introduzca un número: "))
 # total=0
